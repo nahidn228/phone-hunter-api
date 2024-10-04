@@ -47,7 +47,12 @@
           <label
             class="input input-bordered flex items-center bg-slate-200 md:w-2/4"
           >
-            <input type="text" class="grow" placeholder="Search your phone" />
+            <input
+              id="search-box"
+              type="text"
+              class="grow"
+              placeholder="Search your phone"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -71,16 +76,29 @@
       </section>
 
       <!-- progress -->
-     <div id="progress" class="hidden">
-        <progress
-        class=" progress w-56 mx-auto flex justify-center"
-      ></progress>
-     </div>
+      <div id="progress" class="hidden">
+        <progress class="progress w-56 mx-auto flex justify-center"></progress>
+      </div>
 
       <!-- Dynamic Card -->
-      <section id="phone-card" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        
-      </section>
+      <section
+        id="phone-card"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></section>
+      <div class="flex justify-center pt-16">
+        <button
+          onclick="handleShowAll()"
+          class="btn bg-[#0D6EFD] text-white px-8"
+        >
+          Show All
+        </button>
+      </div>
+
+      <!-- Modal -->
+
+      <div id="modal-container">
+       
+      </div>
     </main>
     <!-- footer -->
     <section class="bg-base-200">
