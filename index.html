@@ -61,33 +61,25 @@
               />
             </svg>
           </label>
-          <button class="btn bg-[#0D6EFD] text-white md:px-8">Search</button>
+          <button
+            onclick="handleSearchButton()"
+            class="btn bg-[#0D6EFD] text-white md:px-8"
+          >
+            Search
+          </button>
         </div>
       </section>
 
       <!-- progress -->
-      <progress
-        class="hidden progress w-56 mx-auto flex justify-center"
+     <div id="progress" class="hidden">
+        <progress
+        class=" progress w-56 mx-auto flex justify-center"
       ></progress>
+     </div>
 
       <!-- Dynamic Card -->
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Demo card -->
-        <div class="card bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img src="" alt="Shoes" class="rounded-xl" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
-            <p class="text-sm text-gray-500">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
-            <p class="font-bold">$999</p>
-            <div class="card-actions">
-              <button class="btn bg-[#0D6EFD] text-white">Show Details</button>
-            </div>
-          </div>
-        </div>
+      <section id="phone-card" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
       </section>
     </main>
     <!-- footer -->
